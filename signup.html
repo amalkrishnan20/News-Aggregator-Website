@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News Aggregator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira Sans" rel="stylesheet">
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("pass").value;
+            var confirmPassword = document.getElementById("cpass").value;
+
+            if (password !== confirmPassword) {
+                alert("Password and confirm password do not match!");
+                return false;
+            }
+            if (password.length < 9 || password.length > 16) {
+                alert("Password must be between 9 and 16 characters.");
+                return false; 
+            }
+            var validCharacters = /^[A-Za-z0-9]+$/;
+            if (!validCharacters.test(password)) {
+                alert("Password must contain only A-Z, a-z, and digits.");
+                return false; 
+            }
+            alert('SuccessFully Registered');
+            return true;
+        }
+    </script>
+</head>
+<body>
+<div class="topmenu">  
+  
+    
+    <div class="topnav">
+        <h1>NEWS</h1>
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="latestnews.html">Latest News</a>
+        <a href="sports.html">Sports</a>
+        <a href="education.html">Education</a>
+        <a href="india.html">India</a>
+        <a href="world.html">World</a>
+        <a href="climate.html">Climate</a>
+        <a href="entertainment.html">Enterainment</a>
+        <a class="input" href="signup.html">SIGN UP</a>
+        <a class="input" href="login.html">LOGIN</a>
+    </div>
+</div>
+<div class="background">
+    <div class="top-news">SIGN UP</div>
+    <hr>
+    <div class="form">
+        <form onsubmit="return checkPassword()" action="#">
+            <fieldset>
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" placeholder="Enter Your Name: " required>
+                <label for="age">Age: </label>
+                <input type="date" id="age" placeholder="Enter Your Age(Years): " required>
+                <label for="phone">Mobile: </label>
+                <input type="number" id="phone" placeholder="Enter your 10-digit Mobile Number: " required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="pass">Enter a Password: </label>
+                <input type="password" id="pass" placeholder="Length Between 9-16, No Special Characters" required>
+                <label for="cpass">Confirm your Password: </label>
+                <input type="password" id="cpass" placeholder="Password" required>
+                <label for="submit"></label>
+                <input type="submit" id="submit" placeholder="Submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Created By: Amal Krishnan K A (12303988), Nitin(12304239), Prajjwal Shresth(12304005)</p>
+        <p>Section: K23-GF,</p>
+        <p>School of Computer Science and Engineering</p>
+        <p>Lovely Professional University</p>
+
+      </div>
+</div>
+      
+</body>
+</html>
+
+

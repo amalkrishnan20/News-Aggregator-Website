@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*For BackGround Color*/
+.background{
+  background-image: radial-gradient(circle, #333333, #303030, #2c2c2c, #292929, #262626, #222222, #1f1f1f, #1b1b1b, #161616, #111111, #090909, #000000);
+}
+
+/*Top Navigation Bar*/
+.topnav {
+  margin-top: 0.4px;
+  background-color: #242424;
+  width:100%;
+  display:flex;
+  height: fit-content;
+  box-shadow: 0px 5px 8px 4px rgb(0, 0, 0);
+  border-bottom:0.1px solid white;
+  color:#ffffff;
+  font-size:100%;
+}
+
+/*NEWS Text in Navigation Barr*/
+.topnav h1{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family:Josefin Sans;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/*Clickable Links in Navigation Bar*/
+.topnav a {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: #f2f2f2;
+  background: radial-gradient(circle, rgb(60, 60, 60),#242424);
+  text-align: center;
+  text-decoration: none;
+  border-right:0.1px solid white ;
+  width:8.5%;
+  font-size: 17px;
+}
+
+/*Left Border for first link*/
+.topnav a:first-of-type{
+  border-left:0.1px solid white;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background: radial-gradient(circle, rgb(166, 166, 166),rgb(130, 130, 130));
+  color: black;
+  
+}
+/*Position Remain Fixed even on Scroll*/
+.topmenu{
+  position:sticky;
+  top:0;
+  z-index: 1;
+}
+/*Login & Signup Buttons*/
+.topnav a[class="input"]{
+  width:100px;
+  height:40px;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-radius: 6px;
+  background:hsl(0, 0%, 93%);
+  border: none;
+  color:black;
+  font-size: 15px;
+}
+.topnav a[class="input"]:hover{
+  background: hsl(139, 73%, 48%);
+}
+
+/*Footer */
+.footer {
+  background-color: #222;
+  border-top: 0.1px solid black;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+  margin-top: 50px;
+  line-height: 4px;
+  color:#666;
+}
+
+/*Main News(Big One)*/
+.main-news{
+  padding: 0px 0px 0px 0px; 
+  height:100%;
+  margin-top: 0px;
+  margin-bottom: auto;
+  color:white;
+}
+
+/*Description Part of Main News*/
+.description{
+  margin:5px 5px;
+  font-weight: bold;
+  font-family: 'Fira Sans';
+}
+
+/*Margin for lower part of description*/
+.main-news p{
+  margin-left: 10px;
+}
+
+/*Image of the Main News Section*/
+.main-news img{
+  padding: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 27px 9px rgba(0,0,0,1);
+  width:100%;
+  aspect-ratio: 3/2;
+}
+
+/*Sub News Container(4 on the right)*/
+.sub-news{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:300px 300px;
+  gap: 25px;
+}
+
+
+/*Images in Sub News Part*/
+.sub-news img{
+  width:100%;
+  height: 180px;
+  box-shadow: 0px 0px 27px 9px rgba(0,0,0,1);
+}
+
+/*Heading Just Below the Navigation Bar*/
+.top-news{
+  padding: 30px 10px 0px 100px;
+  text-align: left;
+  font-size: 50px;
+  text-shadow:4px 4px 2px #434343;
+  color:white;
+}
+
+/*Main Container (Holds Main and Sub News)*/
+.container{
+  padding: 30px 10px 10px 10px;
+  display: grid;
+  grid-template-columns:55% 35%;
+  justify-content: center;
+  gap:3%;
+  width:100%;
+}
+
+
+/*Horizontal Line (Appears at 2-3 places )*/
+hr{
+  width: 96%;
+  height: 0.1px;
+  border:none;
+  background-color: rgb(66, 66, 66);
+}
+
+/*Default for all Anchor elements*/
+a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  }
+
+
+
